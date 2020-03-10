@@ -1,0 +1,34 @@
+<app-toolbar></app-toolbar>
+
+<div class="login">
+
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+            <div class="form">
+    
+                <h2>LOGIN</h2>
+    
+                <div class="form-ele">
+                    <label>Email Id </label>
+                    <input type="text" name="Email"  placeholder="xyz@gmail.com"   formControlName="email">
+                   
+                        </div>
+                        <div *ngIf="loginForm.controls['email'].invalid && (loginForm.controls['email'].dirty || loginForm.controls['email'].touched)" class="invalid-feedback">
+                                <div *ngIf="loginForm.controls['email'].errors">
+                                Invalid email address.
+                         </div>  
+    
+                </div>
+                <div class="form-ele">
+                        <label>Password</label>
+                        <input type="password" placeholder="*******" formControlName="password">
+        
+                    </div>
+                <div class="form-ele">
+    
+                    <button type="submit" [disabled]='!loginForm.valid'>SUBMIT</button>
+                </div>
+            </div>
+    
+        </form>
+    
+    </div>

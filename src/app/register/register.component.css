@@ -1,0 +1,49 @@
+.register{
+    font-size: 15px;
+    display: flex;
+    justify-content:center;
+    background-color:white;
+    border:.5px solid white;
+    border-radius: 2%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.invalid-feedback{
+    color: red;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.form-ele{
+    padding: 10px;
+    width: 100%;
+    display: flex;
+
+
+    }
+    .form-ele div{
+        flex: 1;
+    }
+
+.form-ele label{
+    font-family: cursive;
+    font-size: 120%;
+    margin-right: 30px;
+}
+h2{
+    text-align: center;
+    font-family: cursive;
+    font-size: 180%;
+
+}
+
+input{
+    align-self: flex-end;
+}
+
+.sub-ele{
+    margin-left: 25%;
+
+    margin-top:5%;margin-bottom:5%;
+}

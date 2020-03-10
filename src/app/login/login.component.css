@@ -1,0 +1,39 @@
+.login{
+    display: flex;
+    justify-content: center;
+    background-color:white ;
+    border-radius: 50%;
+    z-index: -2;
+    border: 1px solid white;
+
+    margin: 10%
+    
+
+}
+
+.invalid-feedback{
+    color: red;
+    font-size: 12px;
+    font-style: italic;
+    margin-left: 38%;
+}
+
+.form-ele{
+    font-size: 18px;
+
+    padding: 10px;  
+    display: flex;
+    justify-content: space-between;
+}
+button{
+    margin: 20%;
+    margin-left: 40%;
+
+}
+.form-ele label{
+    margin-right: 20px;    
+
+}
+h2{
+    text-align: center;
+}

@@ -1,0 +1,85 @@
+<app-toolbar></app-toolbar>
+<div class="register">
+
+    <form [formGroup]="userProfileForm" (ngSubmit)="onSubmit()">
+        <div class="form">
+            <div>
+                <h2>PLEASE SIGN UP!</h2>
+            </div>
+
+
+            <div class="form-ele">
+                <div>
+                    <label>First Name </label>
+                </div>
+                <div>
+
+                    <input type="text" placeholder="Enter first name" formControlName="firstName">
+                    <div *ngIf="userProfileForm.controls['firstName'].invalid && (userProfileForm.controls['firstName'].dirty || userProfileForm.controls['firstName'].touched)"
+                        class="invalid-feedback">
+                        <div *ngIf="userProfileForm.controls['firstName'].errors">
+                            First Name is required & must be 5 char.
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+            <div class="form-ele">
+                <div>
+
+                    <label>Last Name </label>
+                </div>
+                <div>
+                    <input type="text" placeholder="Enter last name" formControlName="lastName">
+                    <div *ngIf="userProfileForm.controls['lastName'].invalid && (userProfileForm.controls['lastName'].dirty || userProfileForm.controls['lastName'].touched)"
+                        class="invalid-feedback">
+                        <div *ngIf="userProfileForm.controls['lastName'].errors">
+                            Name is required & must be 5 char.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-ele">
+                <div>
+                    <label>Age</label>
+                </div>
+                <div>
+                    <input type="text" placeholder="Enter age" formControlName="age">
+                    <div *ngIf="userProfileForm.controls['age'].invalid && (userProfileForm.controls['age'].dirty || userProfileForm.controls['age'].touched)"
+                        class="invalid-feedback">
+                        <div *ngIf="userProfileForm.controls['age'].errors">
+                            Age must be number only.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="form-ele">
+                <div>
+                    <label>Email Id </label>
+                </div>
+                <div>
+                    <input type="text" placeholder="Enter email id" formControlName="email">
+
+                    <div *ngIf="userProfileForm.controls['email'].invalid && (userProfileForm.controls['email'].dirty || userProfileForm.controls['email'].touched)"
+                        class="invalid-feedback">
+                        <div *ngIf="userProfileForm.controls['email'].errors">
+                            Invalid email.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sub-ele">
+
+                <button type="submit" [disabled]='!userProfileForm.valid'>SUBMIT</button>
+            </div>
+        </div>
+
+    </form>
+
+</div>

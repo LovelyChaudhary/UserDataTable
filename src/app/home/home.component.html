@@ -1,0 +1,26 @@
+<app-toolbar [isLogged]=true></app-toolbar>
+
+<div>
+<div class="tt1">
+        <h2>USER DATA</h2>
+</div>
+<div  class="home">
+
+<table>
+        <thead>
+          <tr>
+            <th *ngFor="let head of headElements" scope="col">{{head}} </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let el of userList">
+            <td>{{el.id}}</td>
+            <td>{{el.name | uppercase}}</td>
+            <td>{{el.email}}</td>
+            <td>{{el.phone}}</td>
+
+          </tr>
+        </tbody>
+      </table>
+    </div>
+</div>

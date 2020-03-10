@@ -1,0 +1,39 @@
+
+.tt{
+    font-size: 25px;
+}
+/*
+  .main{
+      margin: 10%;
+  }*/
+
+  .spacer {
+    flex: 1;
+  }
+ 
+
+  .toolbar {
+    height: 60px;
+    margin: -8px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);color: white;
+    font-weight: 600;
+    margin-bottom: 10%;
+  }
+
+  a{
+      margin-right: 20px;
+      text-decoration: none;
+      color: beige;
+
+  }
+ 
+  a:hover {
+    color:white;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color:orange;
+  }
